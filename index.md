@@ -132,6 +132,7 @@ Informal assumed requirements are:
 
 * Developers shall have a CI system to check their code before they merge it.
   This system should provide feedback as quickly as possible to minimize developer overhead.
+* Developers shall be able to build and test the software on their own computers without requiring remote access to development systems aside from source code repositories.
 * Developers and RSP users shall be able to select containers corresponding to daily or weekly or formal release versions of the pipeline software.
 * Formal releases will be supported for extended periods such that a mechanism must be in place to allow containers to be rebuilt from release branches of the science pipelines code along with security patches applied to the Conda environment.
 
