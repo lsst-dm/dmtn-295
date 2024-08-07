@@ -20,7 +20,7 @@ This includes the support and evolutions of:
 
 A core responsibility of is making formal releases of the [LSST Science Pipelines](https://pipelines.lsst.io) {cite:p}`PSTN-019`.
 This includes making the release builds (including release candidates), possibly applying backports of tickets, and working with the pipelines team to create release notes.
-This will include all the support software for tagging repositories and making the release binaries and containers.
+This will include all the support software for tagging repositories and making the release binaries and containers, and supporting any distribution websites such as <https://eups.lsst.codes>.
 
 ### Supporting the core environment
 
@@ -50,8 +50,13 @@ Additionally, there have been multiple investigations into supporting conda buil
 
 Per-package CI is performed using GitHub actions.
 There are a number of template actions that are supported by BET.
-Additionally, there are more complex actions used by packages that can obtain dependencies without having to depend on pipelines code.
 These actions can evolve over time and be integrated into BET processes.
+Additionally, there are more complex actions used by packages that can obtain dependencies without having to depend on pipelines code.
+
+### Git Repository Health
+
+BET enforces consistent repository configurations for science pipelines packages which includes branch protection settings and required workflows.
+Sometimes, following a policy change, automated scripts supported by BET can be used to bulk configure repositories.
 
 ### Python Bindings
 
